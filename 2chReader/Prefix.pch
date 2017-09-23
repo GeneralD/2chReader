@@ -1,0 +1,21 @@
+//
+//  Prefix.pch
+//  2chReader
+//
+//  Created by Yumenosuke Koukata on 12/21/14.
+//  Copyright (c) 2014 ZYXW. All rights reserved.
+//
+
+#ifndef _2chReader_Prefix_pch
+#define _2chReader_Prefix_pch
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <CocoaLumberjack/DDLegacy.h>
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_ALL;
+#else
+static const int ddLogLevel = LOG_LEVEL_OFF;
+#endif
+
+#endif
